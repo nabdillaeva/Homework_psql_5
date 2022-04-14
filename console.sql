@@ -60,7 +60,7 @@ order by price desc ;--8
 
 SELECT sum(price) from products;--9
 
-select company,productCount from products
-group by company,productCount
+select productName,productCount from products
+group by productName,productCount
 having productCount<=2;--10
 
